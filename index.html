@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- barra Navegador de pagina-->
+        <header>
+            <div class="nav">
+                <div class="nav-links">
+                    <h2>Profile</h2>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#" class="active">My Profile</a></li>
+                        <li><a href="#">Find Conncetione</a></li>
+                    </ul>
+                </div>
+                <div class="nav-btn">
+                    <button>Sign Out</button>
+                </div>
+            </div> 
+        </header>
+        <!-- Desarrollo de contenido-->
+        <div class="contenido">
+            <!-- Desarrollo columna izquierda-->
+            <div class="col-i">
+                <!-- Desarrollo v1-->
+                <div class="tarjeta">
+                    <div class="bloque1">
+                        <div class="user">
+                            <img src="images/jane-m.jpg" alt="user">
+                        </div>
+                    </div>
+                    <div class="bloque2" id="bloque2">
+                        <div>
+                        <h1 class="nombre">Jane Doe</h1>
+                        </div>
+                        <div class="ubicacion">
+                            <img src="icons/map-marker.png" alt="ubicacion">
+                            <h3>Seattle</h3>
+                        </div>
+                        <div>
+                        <p>Developer | Engineer | Problem Solver</p>
+                        <p>Master os shadows and the Internet!</p>
+                        </div>
+                        <div class="edit">
+                            <img src="icons/gear.png" alt="edit">
+                            <a href="#" onclick="editarPerfil()">edit profile</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Desarrollo v2-->
+                <div class="e">
+                    <div class="b1" id="edu">
+                        <h3 class="tituloedu">Education</h3>
+                    </div>
+                    <div class="b2">
+                        <h2>Coding Dojo - Full Stack Bottcamp</h2>
+                            <div class="fecha">
+                            <p>Dec 2019 - Mar 2020</p>
+                            </div>
+                        <p>Triple black belt in Python, MERN, and C#...</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Desarrollo columna derecha-->
+            <div class="col-d">
+                <!-- Desarrollo v1-->
+                <div class="cr">
+                    <!-- Desarrollo barra1-->
+                    <div class="b1">
+                        <div class="cant">
+                            <h3 class="badge" id="requests" >2</h3>
+                        </div>
+                        <h3 class="titulo">Connection Requests</h3>
+                    </div>
+                    <!-- Desarrollo barra2-->
+                    <div class="b2">
+                        <div class="user2" id="request-1">
+                            <div class=u1>
+                                <img src="images/todd-s.jpg" alt="user">
+                                <b>Todd E</b>
+                            </div>
+                            <div class=u2>
+                                <img src="icons/accept-circle.png" alt="user" onclick='accept("#request-1")'>
+                                <img src="icons/close-circle.png" alt="user" onclick='ignore("#request-1")'>
+                            </div>
+                        </div>
+                        <div class="user2" id="request-2">
+                            <div class="u1">
+                                <img src="images/phil-s.jpg" alt="user">
+                                <b>Phil K</b>
+                            </div>
+                            <div class=u2>
+                                <img src="icons/accept-circle.png" alt="user" onclick='accept("#request-2")'>
+                                <img src="icons/close-circle.png" alt="user" onclick='ignore("#request-2")'>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Desarrollo v2-->
+                <div class="yc">
+                    <!-- Desarrollo barra1-->
+                    <div class="b1">
+                        <div class="cant">
+                            <h3 id="connections">498</h3>
+                        </div>
+                        <h3 class="titulo">Your Connections</h3>
+                    </div>
+                    <!-- Desarrollo barra2-->
+                    <div class="b2">
+                        <div class="user3">
+                            <div class=u1>
+                                <img src="images/adrien-s.jpg" alt="user">
+                                <b>Adrien D</b>
+                            </div>
+                        </div>
+                        <div class="user3">
+                            <div class="u1">
+                                <img src="images/anne-s.jpg" alt="user">
+                                <b>Anne J</b>
+                            </div>
+                        </div>
+                        <div class="user3">
+                            <div class=u1>
+                                <img src="images/alayne-s.jpg" alt="user">
+                                <b>Alayne T</b>
+                            </div>
+                        </div>
+                        <div class="user3">
+                            <div class=u1>
+                                <img src="images/arry-s.jpg" alt="user">
+                                <b>Arry Y</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b3">
+                        <p>View More</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
